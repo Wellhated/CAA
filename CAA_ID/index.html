@@ -1,0 +1,69 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CAA AUTOMATED ID</title>
+        <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/form.css">
+    </head>
+    <body>
+
+        <div class="form">
+            <div class="spreadsheet-id input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Spreadsheet ID</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Grade & Section</option>
+                <option value="1">Grade 11 Diamond</option>
+                <option value="2">Grade 12 Sardonyx</option>
+                <option value="3">Grade 12 Emerald</option>
+            </select>
+            <button id="automate_start" class="submit-btn btn btn-primary">Start Automation</button>
+        </div>
+
+        <div class="overlay"></div>
+
+        <nav class="navbar navbar-light justify-content-center">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <button id="automate_id" class="btn btn-primary">Automated ID</button>
+                </li>
+                <li>
+                    <button class="btn btn-danger" id="save_id">Manual ID</button>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="id-container">
+            <div id="id_front">
+              <img crossorigin="anonymous" id="id_picture">
+              <h5 class="id_info" id="id_number"></h5>
+              <h1 class="id_info" id="id_name"></h1>
+              <h1 class="id_info" id="id_grade"></h1>
+              <h5 class="id_info" id="id_strand"></h5>
+              <h1 class="id_info" id="id_schoolyear"></h1>
+            </div>
+            <div id="id_back">
+              <h1 class="id_info" id="parent_guardian"></h1>
+              <h1 class="id_info" id="contact_number"></h1>
+              <h1 class="id_info" id="address"></h1>
+            </div>
+        </div>
+
+
+        <script src="./assets/js/modules/dom-to-image.min.js"></script>
+        <script src="./assets/js/modules/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script>
+        <script src="./assets/js/modules/FileSaver.min.js"></script>
+        <script src="./assets/js/modules/jszip.min.js"></script>
+        <script src="./assets/js/modules/jquery.waitforimages.min.js"></script>
+        <script src="./assets/js/data.js"></script>
+        <script src="./assets/js/form.js"></script>
+        <script src="./assets/js/automate.js"></script>
+
+    </body>
+</html>

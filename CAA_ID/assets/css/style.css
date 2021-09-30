@@ -1,0 +1,153 @@
+nav {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px -1px 37px -26px rgba(0,0,0,0.31);
+}
+body {
+    background-color: #ffff;
+}
+
+
+.form {
+    display: none;
+
+    z-index: 2;
+    position: fixed;
+    margin-top: 250px;
+    margin-left: 610px;
+    box-shadow: 0px 0px 55px 9px rgba(0,0,0,0.31);
+    background-color: white;
+    height: 600px;
+    width: 600px;
+}
+.overlay {
+    display: none;
+
+    z-index: 1;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    height: 100%;
+    width: 100%;
+}
+
+.btn {
+    height: 40px;
+    width: 200px;
+    margin: 10px 50px;
+}
+
+.id-container {
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 25px 500px 50px 60px;
+    width: 1700px;
+}
+
+#id_front {
+    border: 1px solid #040488;
+    border-radius: 14px;
+    box-shadow: 0px 0px 37px -26px rgba(0,0,0,0.31);
+    height: 269mm;
+    width: 173mm;
+    margin-left: 0px;
+    background-image: url("../img/templates/Senior_High.jpg");
+}
+
+#id_back {
+    border: 1px solid white;
+    border-radius: 14px;
+    box-shadow: 0px 0px 37px -26px rgba(0,0,0,0.31);
+    margin-left: 0px;
+    height: 269mm;
+    width: 173mm;
+    background-image: url("../img/templates/Back_ID.png");
+}
+
+
+#id_picture {
+    background-image: url("");
+    
+    height: 284px;
+    width: 275px;
+    margin-top: 59.7%;
+    margin-left: 33.9%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid black;
+
+    overflow: hidden;
+}
+
+#id_number {
+    margin-top: 5px;
+    margin-left: 340px;
+    text-align: left;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+#id_name {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    margin-top: 24px;
+    width: 550px;
+    margin-left: 13%;
+    font-size: 40px;
+    text-align: center;
+    color: black;
+    font-family: Impact;
+    transform: scale(1.1, 1.1);
+}
+
+#id_grade {
+    margin-top: 30px;
+    margin-left: 7%;
+    font-size: 35px;
+    text-align: center;
+    color: black;
+    font-family: Impact;
+}
+
+#id_strand {
+    text-align: center;
+    margin-left: 6%;
+    margin-top: -10px;
+    font-family: sans-serif;
+    color: red;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#id_schoolyear {
+    margin-top: 70px;
+    margin-left: 10%;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(13, 84, 199);
+    font-family: Impact;
+}
+
+
+
+#parent_guardian {
+    font-size: 35px;
+    margin-top: 80%;
+    margin-left: 26%;
+    text-align: left;
+}
+#contact_number {
+    font-size: 35px;
+    margin-top: 13%;
+    margin-left: 26%;
+    text-align: left;
+}
+
+#address {
+    width: 450px;
+    font-size: 30px;
+    margin-top: 13%;
+    margin-left: 26%;
+    text-align: left; 
+}
