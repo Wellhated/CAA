@@ -14,18 +14,13 @@
         <div class="form">
             <div class="spreadsheet-id input-group mb-3">
                 <span class="input-group-text" id="inputGroup-sizing-default">Spreadsheet ID</span>
-                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                <input type="text" id="spreadsheet_id" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
             </div>
-            <select class="form-select" aria-label="Default select example">
-                <option selected>Grade & Section</option>
-                <option value="1">Grade 11 Diamond</option>
-                <option value="2">Grade 12 Sardonyx</option>
-                <option value="3">Grade 12 Emerald</option>
-            </select>
             <button id="automate_start" class="submit-btn btn btn-primary">Start Automation</button>
         </div>
 
         <div class="overlay"></div>
+        <div class="loader"></div>
 
         <nav class="navbar navbar-light justify-content-center">
             <ul class="nav justify-content-center">
@@ -40,7 +35,7 @@
 
         <div class="id-container">
             <div id="id_front">
-              <img crossorigin="anonymous" id="id_picture">
+              <div crossorigin="anonymous" id="id_picture"></div>
               <h5 class="id_info" id="id_number"></h5>
               <h1 class="id_info" id="id_name"></h1>
               <h1 class="id_info" id="id_grade"></h1>
@@ -55,7 +50,7 @@
         </div>
 
 
-        <script src="./assets/js/modules/dom-to-image.min.js"></script>
+        <script src="./assets/js/modules/dom-to-image.js"></script>
         <script src="./assets/js/modules/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script>
         <script src="./assets/js/modules/FileSaver.min.js"></script>

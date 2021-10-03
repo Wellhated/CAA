@@ -6,6 +6,24 @@ body {
     background-color: #ffff;
 }
 
+.loader {
+    display: none;
+    position: fixed;
+    top: 450;
+    left: 800;
+    z-index: 1;
+    border: 30px solid #f3f3f3; /* Light grey */
+    border-top: 30px solid #0492f1; /* Blue */
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+    animation: spin 2s linear infinite;
+}
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
 
 .form {
     display: none;
@@ -24,7 +42,7 @@ body {
 
     z-index: 1;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.466);
     height: 100%;
     width: 100%;
 }
