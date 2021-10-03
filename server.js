@@ -5,6 +5,7 @@ const fs = require('fs');
 const { dirname, resolve } = require("path");
 const { oauth2 } = require("googleapis/build/src/apis/oauth2");
 const command = require("nodemon/lib/config/command");
+const fsx = require("fs-extra");
 
 server = express();
 
@@ -68,7 +69,6 @@ server.get('/api', async(req, res) => {
             var data = getRows.data.values;
             getRows.data.values.shift();
 
-            console.log(data);
             var i = 0;
             while(i < data.length) {
 
@@ -105,6 +105,11 @@ server.get('/api', async(req, res) => {
         });
     });
 
+});
+
+server.get('/api/tmp/delete', async(req, res) => {
+    fsx.emptyDir(__dirname + "/App/tmp");
+    res.end();
 });
 
 server.listen(3000, (req, res) => {

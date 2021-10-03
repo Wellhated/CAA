@@ -17,7 +17,6 @@ $(document).ready(function() {{
             var zip = new JSZip();
 
             var i = 0;
-
             const ID = setInterval(async() => {
                 if (i <= data.length) {
                     var id = {
@@ -100,6 +99,15 @@ $(document).ready(function() {{
                     i = 0;
                     $(".loader").css("display", "none");
                     $(".overlay").css("display", "none");
+
+                    $.ajax({
+                        type: "GET",
+                        url: "/api/tmp/delete",
+                        success: function (data) {
+                            
+                        }
+                    });
+
                 }
             }, 1000);
 
